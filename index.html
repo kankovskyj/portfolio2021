@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kankovsky</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </head>
 <body>
 
     <main>
         <header>
-            <img src="imgs/logo.svg" width="300" alt="logo">
+            <img src="imgs/logo.svg" draggable="false" width="300" alt="logo">
             <div class="menu closed"></div>
         </header>
 
@@ -27,8 +28,8 @@
                 
             </section>
 
-            <section class="right">
-                <img src="imgs/wordcloud.svg" width="500"alt="" srcset="">
+            <section data-tilt data-tilt-speed="1000" data-tilt-transition="true" data-tilt-reset="false"  data-tilt-perspective="1000" class="right">
+                <img draggable="false" data-tilt data-tilt-scale="1.05" src="imgs/wordcloud.svg" width="500">
             </section>
 
 
@@ -40,6 +41,36 @@
         </div>
     </main>
 
+    <portfolio>
 
+        <div class="pf studia">
+            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image st"></div>
+            <div class="line"></div>
+            <h3>Studies</h3>
+        </div>
+        <div class="pf dobrovolnictvi">
+            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image do"></div>
+            <div class="line"></div>
+            <h3>Volunteering</h3>
+        </div>
+        <div class="pf sport">
+            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image sp"></div>
+            <div class="line"></div>
+            <h3>Sport</h3>
+        </div>
+        <div class="pf cestovani">
+            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image ce"></div>
+            <div class="line"></div>
+            <h3>Travel</h3>
+        </div>
+        <div class="pf design">
+            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image de"></div>
+            <div class="line"></div>
+            <h3>Design</h3>
+        </div>
+
+    </portfolio>
+     <!-- Load jQuery first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> <!-- Load Tilt.js library -->
 </body>
 </html>

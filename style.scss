@@ -16,6 +16,10 @@ body::-webkit-scrollbar-thumb {
     background-color: $white;
     outline: 1px solid $black;
 }
+::selection {
+    color: $black;
+    background: $white;
+  }
 
 * {
     margin: 0;
@@ -70,7 +74,7 @@ main {
                     cursor: pointer;
                     font-family: $heading;
                     font-size: 1.25rem;
-                    transition: 0.4s ease-in;
+                    transition: 0.3s ease-in;
                     &-about {
                         margin-right: 2rem;
                         &:hover {
@@ -91,12 +95,13 @@ main {
             margin-left: auto;
             width: 45%;
             opacity: 0.5;
-            transition: opacity 0.8s ease-in-out;
+            transition: opacity 0.3s ease-in-out;
             &:hover {
                 opacity: 1;
             }
             img {
                 margin-right: 0;
+                user-select: none;
             }
         }
     }
@@ -107,5 +112,64 @@ main {
         display: flex;
         justify-content: space-between;
         opacity: 0.25;
+    }
+}
+
+portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    .pf {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.3s ease-in;
+        &:hover {
+            opacity: 1;
+        }
+        .image {
+            width: 220px;
+            height: 60vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: grayscale(100%);
+            &.st {
+                background-image: url(imgs/pf/studia.jpeg);
+            }
+            &.do {
+                background-position: center;
+                background-image: url(imgs/pf/dobrovol.jpg);
+            }
+            &.sp {
+                background-image: url(imgs/pf/sport.jpeg);
+                background-position:20% 50%;
+            }
+            &.ce {
+                background-image: url(imgs/pf/cestovani.jpeg);
+            }
+            &.de {
+                background-image: url(imgs/pf/design.jpeg);
+                background-position: center;
+            }
+        }
+        .line {
+            margin-top: 0.5rem;
+            margin-bottom: 0.2rem;
+            width: 1px;
+            height: 1rem;
+            background-color: $white;
+        }
+        h3 {
+            font-family: $heading;
+            font-size: 1.25rem;
+        }
     }
 }

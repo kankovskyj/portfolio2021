@@ -94,7 +94,7 @@ main {
         .right {
             margin-left: auto;
             width: 45%;
-            opacity: 0.5;
+            opacity: 0.75;
             transition: opacity 0.3s ease-in-out;
             &:hover {
                 opacity: 1;
@@ -246,4 +246,109 @@ portfolio {
             font-size: 1.25rem;
         }
     }
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    main {
+        margin-top: 5vh;
+        height: 90vh;
+        margin-left: auto;
+        margin-right: auto;
+        jumbotron {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .left {
+                width: 100%;
+    
+                .divider {
+                    width: 2.5rem;
+                }
+                p {
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    width: 300px;
+                    line-height: 2.5rem;
+                }
+                div {
+                    flex-direction: column;
+                    margin-top: 5vh;
+                    .btn {
+                        text-align: center;
+                        width: 180px;
+                        padding: 10px 25px;
+                        margin-bottom: 0rem;
+                        margin-top: 0rem;
+                        &-about {
+                            margin-right: 0;
+                            margin-bottom: 1.5rem;
+                            margin-top: 14vh;
+                        }
+                    }
+                }
+            }
+            .right {
+                display: none;
+            }
+        }
+        .bottom {
+            display: none;
+        }
+    }
+
+    work {
+        margin-top: 5vh;
+        flex-direction: column;
+        .item-wrapper {
+            margin-bottom: 10vh;
+            .image {
+                min-width: 300px;
+                min-height: 200px;
+            }
+            .text-wrapper {
+                margin-left: -17rem;
+
+                p {
+                    width: 90%;
+                }
+                span {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    portfolio {
+        flex-direction: column;
+        .pf {
+            flex-direction: column;
+            margin-bottom: 5vh;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
 }

@@ -20,7 +20,7 @@
         <jumbotron>
             <section class="left">
                 <div class="divider"></div>
-                <p>A passionate digital designer based in Prague, Czech Republic.</p> 
+                <p>A digital designer based in Prague, Czech Republic.</p> 
                 <div>
                     <div class="btn btn-about">About</div>
                     <div class="btn btn-portfolio">Portfolio</div>    
@@ -78,7 +78,7 @@
                 <div class="logo nxt"></div>
                 <h4>nextep</h4>
                 <p>Digital agency focusing on custom web development</p>
-                <span>■ Webdesign </span> <span>■ Wireframes</span> <span>■ Code</span>
+                <span>■ Webdesign </span> <span>■ Wireframes</span> <span>■ Graphic Design</span>
             </div>
 
         </div>
@@ -99,10 +99,7 @@
    
     </work>
 
-
-
-
-    <portfolio>
+    <!-- <portfolio>
 
         <div class="pf studia">
             <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image st"></div>
@@ -130,8 +127,65 @@
             <h3>Design</h3>
         </div>
 
-    </portfolio>
-     <!-- Load jQuery first -->
+    </portfolio> -->
+
+    <about>
+        <div class="line">
+        </div>
+
+        <div class="content">
+            <div class="studies lax lax_preset_fadeIn:50:100 lax_preset_spin" data-lax-anchor="#ikona-2" data-lax-scale="(vh) 0.8, (vh*0.7) 1, (vh*0.4) 1, -elh 0.7" data-lax-anchor="self">
+                <div class="divider"></div>
+                <img src="https://via.placeholder.com/150" width="250" height="375" alt="">
+                <div>
+                  <p>Initially a law student at the Charles University in Prague, coding was a hobby. But after getting a job in IT, the world of programming and digital design became a true passion.</p>
+                </div>
+            </div>
+    
+            <div class="work">
+                <div class="divider lax lax_preset_fadeIn:50:100 lax_preset_spin"></div>
+                <img src="https://via.placeholder.com/150" width="250" height="375" alt="">
+                <div>
+                  <p>Initially a law student at the Charles University in Prague, coding was a hobby. But after getting a job in IT, the world of programming and digital design became a true passion.</p>
+                </div>
+            </div>
+
+            <div class="current-occupation">
+                <div class="divider   transform: '200ms scale ease-in-out';
+                "></div>
+                <img src="https://via.placeholder.com/150" width="250" height="375" alt="">
+                <div>
+                  <p>Initially a law student at the Charles University in Prague, coding was a hobby. But after getting a job in IT, the world of programming and digital design became a true passion.</p>
+                </div>
+            </div>
+        </div>
+       
+    </about>
+
+
+    <!-- Load jQuery first -->
+    <script>
+        window.onload = function () {
+          lax.init()
+      
+          // Add a driver that we use to control our animations
+          lax.addDriver('scrollY', function () {
+            return window.scrollY
+          })
+      
+          // Add animation bindings to elements
+          lax.addElements('.selector', {
+            scrollY: {
+              translateX: [
+                ["elInY", "elCenterY", "elOutY"],
+                [0, 'screenWidth/2', 'screenWidth'],
+              ]
+            }
+          })
+        }
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> <!-- Load Tilt.js library -->
 </body>
 </html>

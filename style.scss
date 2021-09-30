@@ -248,6 +248,46 @@ portfolio {
     }
 }
 
+about {
+    display: flex;
+    margin-top: 20vh;
+    width: 90%;
+    height: 200vh;
+    margin-right: auto;
+    margin-left: auto;
+
+    .line {
+        width: 1px;
+        height: 100%;
+        background-color: $white;
+        opacity: 0.75;
+        display: block;
+    }
+    .content {
+        margin-left: 20px;
+        & > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10vh;
+            line-height: 1.5rem;
+            width: 50%;
+            .divider {
+                width: 10rem;
+                opacity: 0.75;
+                height: 1px;
+                background-color: $white;
+                margin-left: -20px;
+            }
+            img {
+                margin-right: 10px;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
 
 
 /* Extra Small Devices, Phones */ 

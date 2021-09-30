@@ -334,6 +334,63 @@ portfolio .pf h3 {
   font-size: 1.25rem;
 }
 
+about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20vh;
+  width: 90%;
+  height: 200vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+about .line {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.75;
+  display: block;
+}
+
+about .content {
+  margin-left: 20px;
+}
+
+about .content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10vh;
+  line-height: 1.5rem;
+  width: 50%;
+}
+
+about .content > div .divider {
+  width: 10rem;
+  opacity: 0.75;
+  height: 1px;
+  background-color: #fff;
+  margin-left: -20px;
+}
+
+about .content > div img {
+  margin-right: 10px;
+}
+
+about .content > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   main {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap");
 @font-face {
   font-family: Regatto;
   src: url(fonts/Regattoo.ttf);
@@ -10,17 +10,34 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
-  outline: 1px solid #0a0a0a;
+  outline: 1px solid #000000;
 }
 
 ::-moz-selection {
-  color: #0a0a0a;
+  color: #000000;
   background: #fff;
 }
 
 ::selection {
-  color: #0a0a0a;
+  color: #000000;
   background: #fff;
+}
+
+button {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #000000;
+  border-color: #fff;
+  color: #fff;
 }
 
 * {
@@ -29,7 +46,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0a0a;
+  background-color: #000000;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #fff;
@@ -38,377 +55,194 @@ body {
 }
 
 main {
-  margin-top: 5vh;
-  width: 90%;
-  height: 90vh;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
-main header {
+header {
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-main jumbotron {
-  margin-top: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-main jumbotron .left {
-  width: 45%;
-  margin-right: auto;
+header a {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-main jumbotron .left .divider {
-  width: 5rem;
-  opacity: 0.75;
-  height: 1px;
-  background-color: #fff;
-}
-
-main jumbotron .left p {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  width: 400px;
-  line-height: 2rem;
-}
-
-main jumbotron .left div {
+header .nav {
+  width: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5vh;
-}
-
-main jumbotron .left div .btn {
-  border: 1px solid #fff;
-  padding: 12px 55px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.8rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   cursor: pointer;
-  font-family: "Regatto", sans-serif;
-  font-size: 1.25rem;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-main jumbotron .left div .btn-about {
-  margin-right: 2rem;
-}
-
-main jumbotron .left div .btn-about:hover {
-  -webkit-box-shadow: 0px 15px 80px 5px white;
-          box-shadow: 0px 15px 80px 5px white;
-}
-
-main jumbotron .left div .btn-portfolio {
-  background-color: #fff;
-  color: #0a0a0a;
-}
-
-main jumbotron .left div .btn-portfolio:hover {
-  -webkit-box-shadow: 0px 15px 80px 5px white;
-          box-shadow: 0px 15px 80px 5px white;
-}
-
-main jumbotron .right {
-  margin-left: auto;
-  width: 45%;
-  opacity: 0.75;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-main jumbotron .right:hover {
-  opacity: 1;
-}
-
-main jumbotron .right img {
-  margin-right: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-main .bottom {
-  margin-top: 30vh;
-  font-family: "Regatto", sans-serif;
-  font-size: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  opacity: 0.25;
-}
-
-work {
+jumbotron {
   margin-top: 10vh;
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-work .item-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-work .item-wrapper .image {
-  min-width: 340px;
-  min-height: 250px;
-  background-image: url(imgs/unip-cover.png);
-  background-color: #0a0a0a;
+jumbotron .img-main {
+  width: 280px;
+  height: 450px;
+  background-image: url(imgs/main.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
-work .item-wrapper .image.cleansie {
-  background-image: url(imgs/cleansie-cover.png);
-}
-
-work .item-wrapper .image.nx {
-  background-position: left;
-  background-image: url(imgs/nextep-cover.png);
-}
-
-work .item-wrapper .image.plm {
-  background-position: center;
-  background-image: url(imgs/pelmet-cover.png);
-}
-
-work .item-wrapper .text-wrapper {
+jumbotron section {
+  margin-top: 10vh;
   margin-left: -7rem;
 }
 
-work .item-wrapper .text-wrapper .logo {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url(imgs/unip.png);
-  background-color: #0a0a0a;
-  border: 1px solid #fff;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50px;
-}
-
-work .item-wrapper .text-wrapper .logo.plm {
-  background-image: url(imgs/plm.png);
-}
-
-work .item-wrapper .text-wrapper .logo.nxt {
-  background-image: url(imgs/nxtp.png);
-}
-
-work .item-wrapper .text-wrapper .logo.cln {
-  background-image: url(imgs/clns.png);
-}
-
-work .item-wrapper .text-wrapper h4 {
-  margin-top: 0.5rem;
-  font-size: 2.5rem;
+jumbotron section h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  width: 700px;
   font-family: "Regatto", sans-serif;
 }
 
-work .item-wrapper .text-wrapper span {
-  font-size: 1.2rem;
-  width: 70%;
-  margin-bottom: 1.5rem;
-  color: #0a0a0a;
-  background-color: #fff;
+jumbotron section .buttons {
+  margin-top: 5vh;
 }
 
-work .item-wrapper .text-wrapper p {
+jumbotron section .buttons button {
+  margin-right: 1vw;
+}
+
+.bottom-fade {
+  font-size: 1.25rem;
+  font-weight: 900;
+  position: absolute;
+  bottom: 5vh;
   text-transform: uppercase;
-  margin-right: 5px;
-  font-size: 0.8rem;
-}
-
-work .item-wrapper .text-wrapper div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20vh;
-  width: 90%;
-  height: 200vh;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-about .line {
-  width: 1px;
-  height: 100%;
-  background-color: #fff;
-  opacity: 0.75;
-  display: block;
-}
-
-about .content {
-  margin-left: 20px;
-}
-
-about .content > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10vh;
-  line-height: 1.5rem;
-  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
 }
 
-about .content > div .divider {
-  width: 10rem;
-  opacity: 0.75;
-  height: 1px;
-  background-color: #fff;
-  margin-left: -20px;
+.bottom-fade .scroll {
+  font-size: 0.8rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 
-about .content > div img {
-  margin-right: 10px;
+work {
+  margin-top: 25vh;
+  display: block;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-about .content > div div {
+work h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  width: 700px;
+  font-family: "Regatto", sans-serif;
+}
+
+work .item {
+  margin-top: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  main {
-    margin-top: 5vh;
-    height: 90vh;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main jumbotron {
-    margin-top: 5vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main jumbotron .left {
-    width: 100%;
-  }
-  main jumbotron .left .divider {
-    width: 2.5rem;
-  }
-  main jumbotron .left p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    width: 300px;
-    line-height: 2.5rem;
-  }
-  main jumbotron .left div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 5vh;
-  }
-  main jumbotron .left div .btn {
-    text-align: center;
-    width: 180px;
-    padding: 10px 25px;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-  }
-  main jumbotron .left div .btn-about {
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-    margin-top: 14vh;
-  }
-  main jumbotron .right {
-    display: none;
-  }
-  main .bottom {
-    display: none;
-  }
-  work {
-    margin-top: 5vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  work .item-wrapper {
-    margin-bottom: 10vh;
-  }
-  work .item-wrapper .image {
-    min-width: 300px;
-    min-height: 200px;
-  }
-  work .item-wrapper .text-wrapper {
-    margin-left: -17rem;
-  }
-  work .item-wrapper .text-wrapper p {
-    width: 90%;
-  }
-  work .item-wrapper .text-wrapper span {
-    font-size: 0.7rem;
-  }
-  portfolio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  portfolio .pf {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 5vh;
-  }
+work .item .preview {
+  position: relative;
+  min-width: 500px;
+  height: 300px;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 3vw;
+}
+
+work .item .preview.pelmet {
+  background-image: url(imgs/pelmet-cover.png);
+}
+
+work .item .preview.cleansie {
+  background-image: url(imgs/cleansie-cover.png);
+}
+
+work .item .preview.unipay {
+  background-image: url(imgs/unipay-cover.png);
+}
+
+work .item .preview.sikla {
+  background-image: url(imgs/sikla-cover.png);
+}
+
+work .item .preview::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -2;
+  left: -10px;
+  top: -10px;
+  border: 1px solid #fff;
+  background: #000000;
+  width: 500px;
+  height: 300px;
+}
+
+work .item .description span {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+work .item .description p {
+  margin-top: 2vh;
+  font-family: "Regatto", sans-serif;
+  font-size: 3rem;
+  width: 700px;
+}
+
+work .item .description div {
+  margin-top: 4vh;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+work .item .description button {
+  margin-top: 6vh;
 }
 
 /* Small Devices, Tablets */

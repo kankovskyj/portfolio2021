@@ -6,186 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kankovsky</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <script src="https://unpkg.com/kursor"></script>
     <script src="scripts.js"></script>
+
 </head>
 <body>
 
-    <main>
-        <header>
-            <img src="imgs/logo.svg" draggable="false" width="300" alt="logo">
-            <div class="menu closed"></div>
-        </header>
 
-        <jumbotron>
-            <section class="left">
-                <div class="divider"></div>
-                <p>A digital designer based in Prague, Czech Republic.</p> 
-                <div>
-                    <div class="btn btn-about">About</div>
-                    <div class="btn btn-portfolio">Portfolio</div>    
+<main>
+    <header>
+        <a>Jan Kankovsky</a>
+        <div class="nav"><span>Open</span> Menu</div>
+    </header>
+
+    <jumbotron>
+            <div class="img-main"></div>
+            <section>
+                <h1>A digital designer based in Prague, Czech Republic.</h1>
+                <div class="buttons">
+                    <button class="secondary">About</button>
+                    <button class="primary">My Work</button>
                 </div>
-                
             </section>
+    </jumbotron>
 
-            <section data-tilt data-tilt-speed="1000" data-tilt-transition="true" data-tilt-reset="false"  data-tilt-perspective="1000" class="right">
-                <img draggable="false" data-tilt data-tilt-scale="1.05" src="imgs/wordcloud.svg" width="500">
-            </section>
+    
+</main>
 
+<work>
+    <h2>My work</h2>
 
-        </jumbotron>
+    <div class="item">
+        <div class="preview pelmet"></div>
 
-        <div class="bottom">
-            <p>PORTFOLIO</p>
-            <p>2021</p>
+        <div class="description">
+            <span>Pelmet.eu</span>
+            <p>Web redesign for a 21st century IT company</p>
+            <div class="tags">■ Concept    ■ UI/UX Design   ■ Custom icons ■ Web development</div>
+            <button class="secondary">Details</button>
         </div>
-    </main>
-<!-- data-tilt data-tilt-perspective="300" -->
-    <work>
-            <div class="item-wrapper">
+    </div>
 
-                <div class="image"></div>
-                <div class="text-wrapper">
-                    <div class="logo"></div>
-                    <h4>uniPAY</h4>
-                    <span>Smart app that saves time and money for drivers</span>
-                    <div><p>■ UX/UX Design</p> <p>■ Art direction</p> <p>■ Print</p></div>
-                </div>
-    
-            </div>
-    
-            <div class="item-wrapper">
-    
-                <div class="image plm"></div>
-                <div class="text-wrapper">
-                    <div class="logo plm"></div>
-                    <h4>Pelmet</h4>
-                    <span>Web redesign for a 21st century IT company</span>
-                    <div><p>■ UX/UX Design</p> <p>■ Web development</p> <p>■ Graphics</p></div>
-                </div>
-    
-            </div>
+    <div class="item">
+        <div class="preview cleansie"></div>
+
+        <div class="description">
+            <span>Cleansie</span>
+            <p>Unique branding for a pocket-friendly disinfectant </p>
+            <div class="tags">■ Graphic design   ■ Branding strategy    ■ Print</div>
+            <button class="secondary">Details</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="preview unipay"></div>
+
+        <div class="description">
+            <span>uniPay</span>
+            <p>Money-saving app for in-the-know motorists </p>
+            <div class="tags">■ Design system    ■ App design    ■ Print ■ CMS development</div>
+            <button class="secondary">Details</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="preview sikla"></div>
+
+        <div class="description">
+            <span>Sikla</span>
+            <p>E-commerce concept for a construction manufacturer</p>
+            <div class="tags">■ GRAPHIC DESIGN    ■ BRANDING STRATEGY    ■ PRINT</div>
+            <button class="secondary">Details</button>
+        </div>
+    </div>
+
+    <div class="item">
         
+    </div>
+</work>
 
-       
-    </work>
-
-    <work>
-        <div class="item-wrapper">
-
-            <div class="image nx"></div>
-            <div class="text-wrapper">
-                <div class="logo nxt"></div>
-                <h4>nextep</h4>
-                <p>Digital agency focusing on custom web development</p>
-                <span>■ Webdesign </span> <span>■ Wireframes</span> <span>■ Graphic Design</span>
-            </div>
-
-        </div>
-
-        <div class="item-wrapper">
-
-            <div class="image cleansie"></div>
-            <div class="text-wrapper">
-                <div class="logo cln"></div>
-                <h4>Cleansie</h4>
-                <p>Modern product design for a disinfectant gel</p>
-                <span>■ Product design</span> <span>■ Logo design</span> <span>■ Branding</span>
-            </div>
-
-        </div>
-    
-
-   
-    </work>
-
-    <!-- <portfolio>
-
-        <div class="pf studia">
-            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image st"></div>
-            <div class="line"></div>
-            <h3>Studies</h3>
-        </div>
-        <div class="pf dobrovolnictvi">
-            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image do"></div>
-            <div class="line"></div>
-            <h3>Volunteering</h3>
-        </div>
-        <div class="pf sport">
-            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image sp"></div>
-            <div class="line"></div>
-            <h3>Sport</h3>
-        </div>
-        <div class="pf cestovani">
-            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image ce"></div>
-            <div class="line"></div>
-            <h3>Travel</h3>
-        </div>
-        <div class="pf design">
-            <div data-tilt data-tilt-reset="false" data-tilt-speed="1000" data-tilt-perspective="2000" class="image de"></div>
-            <div class="line"></div>
-            <h3>Design</h3>
-        </div>
-
-    </portfolio> -->
-
-    <about>
-        <div class="line">
-        </div>
-
-        <div class="content">
-            <div class="studies lax lax_preset_fadeIn:50:100 lax_preset_spin" data-lax-anchor="#ikona-2" data-lax-scale="(vh) 0.8, (vh*0.7) 1, (vh*0.4) 1, -elh 0.7" data-lax-anchor="self">
-                <div class="divider"></div>
-                <img src="https://via.placeholder.com/150" width="250" height="375" alt="">
-                <div>
-                  <p>Initially a law student at the Charles University in Prague, coding was a hobby. But after getting a job in IT, the world of programming and digital design became a true passion.</p>
-                </div>
-            </div>
-    
-            <div class="work">
-                <div class="divider lax lax_preset_fadeIn:50:100 lax_preset_spin"></div>
-                <img src="https://via.placeholder.com/150" width="250" height="375" alt="">
-                <div>
-                  <p>Initially a law student at the Charles University in Prague, coding was a hobby. But after getting a job in IT, the world of programming and digital design became a true passion.</p>
-                </div>
-            </div>
-
-            <div class="current-occupation">
-                <div class="divider   transform: '200ms scale ease-in-out';
-                "></div>
-                <img src="https://via.placeholder.com/150" width="250" height="375" alt="">
-                <div>
-                  <p>Initially a law student at the Charles University in Prague, coding was a hobby. But after getting a job in IT, the world of programming and digital design became a true passion.</p>
-                </div>
-            </div>
-        </div>
-       
-    </about>
-
-
-    <!-- Load jQuery first -->
-    <script>
-        window.onload = function () {
-          lax.init()
-      
-          // Add a driver that we use to control our animations
-          lax.addDriver('scrollY', function () {
-            return window.scrollY
-          })
-      
-          // Add animation bindings to elements
-          lax.addElements('.selector', {
-            scrollY: {
-              translateX: [
-                ["elInY", "elCenterY", "elOutY"],
-                [0, 'screenWidth/2', 'screenWidth'],
-              ]
-            }
-          })
-        }
-      </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> <!-- Load Tilt.js library -->
+<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script>
+    new kursor({
+	type: 2,
+    removeDefaultCursor: true,
+    color: "#ffffff"
+})
+</script>
 </body>
 </html>

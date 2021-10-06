@@ -175,78 +175,25 @@ work {
                 font-size: 2.5rem;
                 font-family: $heading;
             }
-            p {
+            span {
                 font-size: 1.2rem;
                 width: 70%;
                 margin-bottom: 1.5rem;
+                color: $black;
+                background-color: $white;
             }
-            span {
+            p {
                 text-transform: uppercase;
                 margin-right: 5px;
                 font-size: 0.8rem;
+            }
+            div {
+                display: flex;
             }
         }
     }
 }
 
-portfolio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 20vh;
-    margin-bottom: 5vh;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    .pf {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-        opacity: 0.8;
-        transition: 0.3s ease-in;
-        &:hover {
-            opacity: 1;
-        }
-        .image {
-            width: 220px;
-            height: 60vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            filter: grayscale(100%);
-            &.st {
-                background-image: url(imgs/pf/studia.jpeg);
-            }
-            &.do {
-                background-position: center;
-                background-image: url(imgs/pf/dobrovol.jpg);
-            }
-            &.sp {
-                background-image: url(imgs/pf/sport.jpeg);
-                background-position:20% 50%;
-            }
-            &.ce {
-                background-image: url(imgs/pf/cestovani.jpeg);
-            }
-            &.de {
-                background-image: url(imgs/pf/design.jpeg);
-                background-position: center;
-            }
-        }
-        .line {
-            margin-top: 0.5rem;
-            margin-bottom: 0.2rem;
-            width: 1px;
-            height: 1rem;
-            background-color: $white;
-        }
-        h3 {
-            font-family: $heading;
-            font-size: 1.25rem;
-        }
-    }
-}
 
 about {
     display: flex;

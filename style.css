@@ -238,100 +238,24 @@ work .item-wrapper .text-wrapper h4 {
   font-family: "Regatto", sans-serif;
 }
 
-work .item-wrapper .text-wrapper p {
+work .item-wrapper .text-wrapper span {
   font-size: 1.2rem;
   width: 70%;
   margin-bottom: 1.5rem;
+  color: #0a0a0a;
+  background-color: #fff;
 }
 
-work .item-wrapper .text-wrapper span {
+work .item-wrapper .text-wrapper p {
   text-transform: uppercase;
   margin-right: 5px;
   font-size: 0.8rem;
 }
 
-portfolio {
+work .item-wrapper .text-wrapper div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin-top: 20vh;
-  margin-bottom: 5vh;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-portfolio .pf {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  opacity: 0.8;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-
-portfolio .pf:hover {
-  opacity: 1;
-}
-
-portfolio .pf .image {
-  width: 220px;
-  height: 60vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-portfolio .pf .image.st {
-  background-image: url(imgs/pf/studia.jpeg);
-}
-
-portfolio .pf .image.do {
-  background-position: center;
-  background-image: url(imgs/pf/dobrovol.jpg);
-}
-
-portfolio .pf .image.sp {
-  background-image: url(imgs/pf/sport.jpeg);
-  background-position: 20% 50%;
-}
-
-portfolio .pf .image.ce {
-  background-image: url(imgs/pf/cestovani.jpeg);
-}
-
-portfolio .pf .image.de {
-  background-image: url(imgs/pf/design.jpeg);
-  background-position: center;
-}
-
-portfolio .pf .line {
-  margin-top: 0.5rem;
-  margin-bottom: 0.2rem;
-  width: 1px;
-  height: 1rem;
-  background-color: #fff;
-}
-
-portfolio .pf h3 {
-  font-family: "Regatto", sans-serif;
-  font-size: 1.25rem;
 }
 
 about {

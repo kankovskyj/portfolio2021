@@ -31,7 +31,6 @@ button {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   border: 1px solid #fff;
-  cursor: pointer;
 }
 
 button.secondary {
@@ -43,6 +42,19 @@ button.secondary {
 * {
   margin: 0;
   padding: 0;
+  cursor: none;
+}
+
+.cursor {
+  width: 0.5rem;
+  height: 2rem;
+  background: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
 }
 
 body {
@@ -90,7 +102,6 @@ header .nav {
   font-size: 0.8rem;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  cursor: pointer;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -153,7 +164,6 @@ jumbotron section .buttons button {
   font-size: 0.8rem;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  cursor: pointer;
 }
 
 work {

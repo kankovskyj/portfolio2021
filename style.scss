@@ -99,8 +99,8 @@ jumbotron {
     align-items: center;
     margin-top: 15vh;
     .image {
-        background-image: url(imgs/studia.jpeg);
-        //filter: grayscale(100);
+        background-image: url(imgs/studia.png);
+        image-rendering: pixelated;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -110,7 +110,6 @@ jumbotron {
         position: relative;
         z-index: 5;
         border-radius: 20px;
-        animation: fade-in 0.8s ease 0s 1 normal forwards;
 
         .abstract.one {
             position: absolute;

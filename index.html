@@ -11,78 +11,67 @@
 <body>
 <div class="cursor"></div>
 
-<main>
+<div class="panel" data-color="white">
     <header>
-        <a>Jan Kankovsky</a>
-        <div class="nav"><span>Open</span> Menu</div>
+        <a class="logo" href="">kankov<span>sky</span></a>
+        <div>
+            <a href="">Work</a>
+            <a href="">About</a>
+        </div>
     </header>
 
     <jumbotron>
-            <div class="img-main"></div>
-            <section>
-                <h1>A digital designer based in Prague, Czech Republic.</h1>
-                <div class="buttons">
-                    <button class="secondary">About</button>
-                    <button class="primary">My Work</button>
-                </div>
-            </section>
-    </jumbotron>
-
-    
-</main>
-
-<work>
-    <h2>My work</h2>
-
-    <div class="item">
-        <div class="preview pelmet"></div>
-
-        <div class="description">
-            <span>Pelmet.eu</span>
-            <p>Web redesign for a 21st century IT company</p>
-            <div class="tags">■ Concept    ■ UI/UX Design   ■ Custom icons ■ Web development</div>
-            <button class="secondary">Details</button>
+        <div class="image">
+            <div class="abstract one lax lax_preset_scaleInOut:173.75:0.6"></div>
         </div>
-    </div>
-
-    <div class="item">
-        <div class="preview cleansie"></div>
-
-        <div class="description">
-            <span>Cleansie</span>
-            <p>Unique branding for a pocket-friendly disinfectant </p>
-            <div class="tags">■ Graphic design   ■ Branding strategy    ■ Print</div>
-            <button class="secondary">Details</button>
+        <div class="border">
+            <div class="abstract two"></div>
+            <div class="abstract three"></div>
         </div>
-    </div>
-
-    <div class="item">
-        <div class="preview unipay"></div>
-
-        <div class="description">
-            <span>uniPay</span>
-            <p>Money-saving app for in-the-know motorists </p>
-            <div class="tags">■ Design system    ■ App design    ■ Print ■ CMS development</div>
-            <button class="secondary">Details</button>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="preview sikla"></div>
-
-        <div class="description">
-            <span>Sikla</span>
-            <p>E-commerce concept for a construction manufacturer</p>
-            <div class="tags">■ GRAPHIC DESIGN    ■ BRANDING STRATEGY    ■ PRINT</div>
-            <button class="secondary">Details</button>
-        </div>
-    </div>
-
-    <div class="item">
         
-    </div>
-</work>
+        <div class="content">
+            <p>Jan Kankovsky</p>
+            <h1>A digital designer & developer based in Prague, Czech Republic.</h1>
+            <button>My work</button>
+        </div>
+    </jumbotron>
+</div>
 
+<div class="panel black" data-color="black">
+    <h2>Panel</h2>
+</div>
+
+<div class="panel" data-color="white">
+    <h2>Panel</h2>    
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script>
+    window.onload = function () {
+      lax.init()
+  
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+  
+      // Add animation bindings to elements
+      lax.addElements('.selector', {
+        scrollY: {
+          translateX: [
+            ["elInY", "elCenterY", "elOutY"],
+            [0, 'screenWidth/2', 'screenWidth'],
+          ]
+        }
+      })
+    }
+  </script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
 
 </body>

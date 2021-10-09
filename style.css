@@ -49,6 +49,7 @@ body {
   background-color: #fdfbf9;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
+  overflow-x: hidden;
 }
 
 /* panel styles */
@@ -70,7 +71,6 @@ body {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 2px dashed grey;
 }
 
 header {
@@ -327,6 +327,7 @@ jumbotron .content button {
   border: none;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   border-radius: 20px 20px 70px 20px;
   -webkit-box-shadow: 3px 3px 0px 0px #10161e;
           box-shadow: 3px 3px 0px 0px #10161e;
@@ -360,6 +361,97 @@ jumbotron .content button {
   }
 }
 
+h2 {
+  margin-top: 10vh;
+  font-family: "Regatto", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.work-wrapper {
+  margin-bottom: 40vh;
+}
+
+.work-wrapper .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10vh;
+}
+
+.work-wrapper .row .item {
+  margin-right: 5vw;
+  border-radius: 20px;
+  background: #0a0e12;
+  background: linear-gradient(337deg, #0a0e12 0%, #10161e 75%);
+  width: 350px;
+  padding: 25px 80px 25px 25px;
+}
+
+.work-wrapper .row .item:nth-of-type(1) {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.work-wrapper .row .item:nth-of-type(2) {
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.work-wrapper .row .item:nth-of-type(3) {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.work-wrapper .row .item:nth-of-type(4) {
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.work-wrapper .row .item img {
+  background-color: #fdfbf9;
+  border-radius: 50px;
+}
+
+.work-wrapper .row .item img.pelmet {
+  background-color: #10161e;
+}
+
+.work-wrapper .row .item h3 {
+  font-family: "Regatto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2vh;
+  margin-left: 4px;
+}
+
+.work-wrapper .row .item p {
+  margin-top: 2vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  width: 300px;
+  line-height: 1.5rem;
+  margin-left: 6px;
+}
+
+.work-wrapper .row .item ul {
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.work-wrapper .row .item ul li {
+  font-style: italic;
+  margin-right: 1rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-left: 6px;
+}
+
 @media (max-width: 575.98px) {
   .cursor {
     display: none;
@@ -372,7 +464,7 @@ jumbotron .content button {
   }
   header .logo {
     font-family: "Regatto", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   header .logo span {
     color: #628395;
@@ -441,6 +533,61 @@ jumbotron .content button {
     padding: 12px 40px;
     -webkit-animation: none;
             animation: none;
+  }
+  h2 {
+    margin-top: 10vh;
+    font-size: 2rem;
+  }
+  .work-wrapper .row {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .work-wrapper .row .item {
+    margin-right: 0;
+    margin-top: 10vh;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0;
+  }
+  .work-wrapper .row .item img {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .work-wrapper .row .item h3 {
+    font-size: 1.4rem;
+    margin-top: 2vh;
+    margin-left: 19px;
+  }
+  .work-wrapper .row .item p {
+    margin-top: 2vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    width: 220px;
+    line-height: 1.5rem;
+    margin-left: 21px;
+  }
+  .work-wrapper .row .item ul {
+    margin-top: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .work-wrapper .row .item ul li {
+    font-style: italic;
+    margin-right: 0rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    margin-left: 21px;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -249,6 +249,13 @@ h2 {
     font-weight: 400;
     font-size: 2rem;
 }
+h4 {
+    font-family: $text;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    margin-bottom: 1rem;
+}
 .work-wrapper {
     margin-bottom: 40vh;
     .row {
@@ -312,7 +319,120 @@ h2 {
         }
     }
 }
+.skillset-wrapper {
+    display: flex;
+    margin-bottom: 40vh;
+}
+.software {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    .soft-row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -1rem;
+        .soft-row-item {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            .image {
+                width: 120px;
+                height: 120px;
+                background: #ffffff;
+                background: linear-gradient(337deg, #ffffff 0%, #fdfbf9 75%);
+                border-radius: 20px;
+                position: relative; 
+                div {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-position: center;
+                    background-repeat: no-repeat;
 
+                    &.html {
+                        background-image: url(imgs/icons/html.svg);
+                    }
+                    &.css {
+                        background-image: url(imgs/icons/css.svg);
+                    }
+                    &.sass {
+                        background-image: url(imgs/icons/sass.svg);
+                    }
+                    &.less {
+                        background-image: url(imgs/icons/less.svg);
+                    }
+                    &.es {
+                        background-image: url(imgs/icons/es6.svg);
+                    }
+                    &.react {
+                        background-image: url(imgs/icons/react.svg);
+                    }
+                    &.git {
+                        background-image: url(imgs/icons/git.svg);
+                    }
+                    &.xd {
+                        background-image: url(imgs/icons/xd.svg);
+                    }
+                    &.fig {
+                        background-image: url(imgs/icons/fig.svg);
+                    }
+                    &.ps {
+                        background-image: url(imgs/icons/ps.svg);
+                    }
+                    &.ai {
+                        background-image: url(imgs/icons/ai.svg);
+                    }
+                    &.ae {
+                        background-image: url(imgs/icons/ae.svg);
+                    }
+                }
+                 
+            }
+            span {
+                margin-top: 0.5rem;
+                color: $black;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.foe-wrapper {
+    width: 45%;
+    margin-left: 5rem;
+    div {
+        display: flex;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        //margin-left: -1rem;
+    }
+    .aoe {
+        width: 300px;
+        height: 120px;
+        background: #ffffff;
+        background: linear-gradient(337deg, #ffffff 0%, #fdfbf9 75%);
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        border-radius: 20px;
+        span {
+            line-height: 120px;
+            font-size: 1.4rem;
+            font-family: $heading;
+            color: $black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {

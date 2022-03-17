@@ -51,6 +51,14 @@ body {
     background-color: $black;
 }
 
+.color-purple {
+    background-color: #5935b4;
+}
+.color-gold {
+    background-color: #927a25;
+}
+
+
 .landing-wrapper {
     width: 100%;
     overflow: hidden;
@@ -290,9 +298,60 @@ body {
     }
 }
 
+.sqer-panel {
+    position: relative;
+    
+    .sqer-main {
+        width: 90%;
+        margin: 10vh auto 0 auto;
+        display: block;
+        text-align: center;
+        color: $white;
+        div {
+            margin: 0 auto 5vh auto;
+            width: 250px;
+            height: 250px;
+            display: block;
+            background-image: url(imgs/sqer.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
 
+.sqer-top-img {
+    margin-top: -15vh;
+}
+.sqer-section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        width: 50vw;
+        height: 70vh;
+    }
+    div {
+        p {
+            margin-top: 0.5rem;
+            line-height: 1.7rem;
+        }
+    }
+}
 
-
+.raouf-section {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 @media (min-width: 768px) {
     html {
@@ -347,6 +406,36 @@ body {
             right: -4rem;
             height: 70vh;
         }
+    }
+
+    .sqer-section {
+        width: 90%;
+        margin-top: 5vh;
+        flex-direction: row;
+        align-items: center;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+            width: 50vw;
+            height: 90vh;
+        }
+        div {
+            margin-left: 2rem;
+            p {
+                font-size: 0.8rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
+
+    .odd-img {
+        order: 2;
+    }
+    .odd {
+        margin-right: 2rem;
+        margin-left: 0 !important;
+        order: 1;
     }
 }
 
@@ -448,6 +537,22 @@ body {
 
         p:nth-of-type(2) {
             margin-left: auto;
+        }
+    }
+
+    .sqer-section {
+        width: 60%;
+        margin-top: 5vh;
+        flex-direction: row;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+            width: 50vw;
+            height: 90vh;
+        }
+        div {
+            margin-left: 2rem;
         }
     }
 }

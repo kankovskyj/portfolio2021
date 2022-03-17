@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital designer & developer based in Prague, Czech Republic.">
+  <title>Kankovsky</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="imgs/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="imgs/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="imgs/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="imgs/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="imgs/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="imgs/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+  <link rel="manifest" href="imgs/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="imgs/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <div class="panel sqer-panel" data-color="gold">
+        <div class="landing-wrapper">
+            <header>
+                <nav>
+                <a href="index.html" class="logo" style="color: white;">Jan Kankovsky</a>
+                <a href="#contact"><button>Get in touch <div class="arrow-right"></div></button></a>
+                </nav>
+            </header>
+            <div class="sqer-main">
+                <div style="border-radius: 50%; background-image: url(imgs/bday.png);"></div>
+                <h1>Raouf Touma's birthday event</h1>
+                <span>Website design</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel black" data-color="black">
+      <div class="raouf-section">
+        <img src="imgs/raoufone.png" alt="">
+        <div>
+            <h2>Design</h2>
+            <p>I chose a user-first approach to design, and along with social media-like features and interactions, I achieved a non-formal and friendly vibe that quickly breaks any stigma associated with debt tracking while providing an extremely useful tool to users.</p>
+        </div>
+     </div>
+    </div>
+
+    <div class="panel" data-color="gold" style="min-height: 50vh; max-height: 50vh !important;">
+      <div class="contact-wrapper">
+        <h4>Thanks for scrolling all the way here. Need more details?</h4>
+        <a id="contact" style="border: 2px solid black;"" href="mailto:hello@kankovskydesign.com">hello@kankovskydesign.com</a>
+        <a id="contact" style="background-color: transparent; border: 2px solid black; color: black;" href="index.html">Back to home</a>
+      </div>
+     
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script>
+    window.onload = function () {
+      lax.init()
+
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+
+      // Add animation bindings to elements
+      lax.addElements('.selector', {
+        scrollY: {
+          translateX: [
+            ["elInY", "elCenterY", "elOutY"],
+            [0, 'screenWidth/2', 'screenWidth'],
+          ]
+        }
+      })
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>

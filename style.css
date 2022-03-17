@@ -31,6 +31,14 @@ body {
   background-color: #141613;
 }
 
+.color-purple {
+  background-color: #5935b4;
+}
+
+.color-gold {
+  background-color: #927a25;
+}
+
 .landing-wrapper {
   width: 100%;
   overflow: hidden;
@@ -334,6 +342,69 @@ body {
   color: #eaf2e5;
 }
 
+.sqer-panel {
+  position: relative;
+}
+
+.sqer-panel .sqer-main {
+  width: 90%;
+  margin: 10vh auto 0 auto;
+  display: block;
+  text-align: center;
+  color: #eaf2e5;
+}
+
+.sqer-panel .sqer-main div {
+  margin: 0 auto 5vh auto;
+  width: 250px;
+  height: 250px;
+  display: block;
+  background-image: url(imgs/sqer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sqer-top-img {
+  margin-top: -15vh;
+}
+
+.sqer-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sqer-section img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  width: 50vw;
+  height: 70vh;
+}
+
+.sqer-section div p {
+  margin-top: 0.5rem;
+  line-height: 1.7rem;
+}
+
+.raouf-section {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+.raouf-section img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 26px;
@@ -385,6 +456,43 @@ body {
   .landing-wrapper img {
     right: -4rem;
     height: 70vh;
+  }
+  .sqer-section {
+    width: 90%;
+    margin-top: 5vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sqer-section img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 50vw;
+    height: 90vh;
+  }
+  .sqer-section div {
+    margin-left: 2rem;
+  }
+  .sqer-section div p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .odd-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .odd {
+    margin-right: 2rem;
+    margin-left: 0 !important;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -473,6 +581,24 @@ body {
   }
   .how-wrapper p:nth-of-type(2) {
     margin-left: auto;
+  }
+  .sqer-section {
+    width: 60%;
+    margin-top: 5vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sqer-section img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 50vw;
+    height: 90vh;
+  }
+  .sqer-section div {
+    margin-left: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -39,6 +39,15 @@ body {
   background-color: #927a25;
 }
 
+.arrow-right {
+  margin-left: 5px;
+  background-image: url(imgs/arrow-right-thin.svg);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+}
+
 .landing-wrapper {
   width: 100%;
   overflow: hidden;
@@ -86,15 +95,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.landing-wrapper header nav button .arrow-right {
-  margin-left: 5px;
-  background-image: url(imgs/arrow-right-thin.svg);
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  background-position: center;
+  color: #141613;
 }
 
 .landing-wrapper .landing-content {
@@ -386,8 +387,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
+  min-width: 250px;
   width: 50vw;
-  height: 70vh;
+  height: auto;
 }
 
 .sqer-section div p {
@@ -397,12 +399,21 @@ body {
 
 .raouf-section {
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 10vh auto;
 }
 
 .raouf-section img {
   width: 100%;
   height: auto;
+}
+
+.raouf-section div {
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.raouf-section div p {
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -473,7 +484,7 @@ body {
     margin-right: auto;
     margin-bottom: 2rem;
     width: 50vw;
-    height: 90vh;
+    height: auto;
   }
   .sqer-section div {
     margin-left: 2rem;
@@ -595,10 +606,31 @@ body {
     margin-right: auto;
     margin-bottom: 2rem;
     width: 50vw;
-    height: 90vh;
+    height: auto;
   }
   .sqer-section div {
     margin-left: 2rem;
+  }
+  .raouf-section {
+    width: 90%;
+    margin: -5vh auto 15vh auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .raouf-section img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .raouf-section div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
